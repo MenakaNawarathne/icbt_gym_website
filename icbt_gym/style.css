@@ -1,0 +1,421 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background-color: #003366;
+  padding: 20px 0;
+  color: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') no-repeat center center/cover;
+  color:  #C0C0C0;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+}
+.btn {
+  display: inline-block;
+  background: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #e63e00;
+}
+.features {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feature {
+  max-width: 300px;
+  margin: 15px;
+}
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+.login-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* About Page */
+.about-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.about-content h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Contact Page */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+.contact-content {
+    max-width: 1000px;
+    margin: auto;
+}
+.contact-content h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+.contact-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contact-info-block {
+    flex: 1;
+    min-width: 280px;
+}
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact-form-button {
+    padding: 12px;
+    background-color: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form-button:hover {
+    background-color: #004d40;
+}
+
+/* Services Page */
+.services-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+.services-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+.services-content h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+.service-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.service-card {
+    flex: 1 1 250px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card h3 {
+    color: #00695c;
+}
+.service-card button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.service-card button:hover {
+    background-color: #004d40;
+}
+
+/* Plan Page */
+.membership-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+.membership-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+.membership-content h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+.membership-content p {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 40px;
+}
+.membership-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.plan-card {
+    flex: 1 1 280px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+.plan-card h3 {
+    color: #2c3e50;
+}
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.plan-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.plan-card button:hover {
+    background-color: #004d40;
+}
+
+/* Alert styles */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Progress section styles */
+.progress-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.progress-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.progress-form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-records {
+    margin-top: 30px;
+}
+
+.progress-records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-records th,
+.progress-records td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.progress-records th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.progress-records tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Booking section styles */
+.booking-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.booking-content {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.booking-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Button hover effect */
+.btn:hover, 
+.plan-card button:hover, 
+.contact-form-button:hover,
+.service-card button:hover {
+    background-color: #e63e00;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-flex-container {
+        flex-direction: column;
+    }
+    
+    .membership-plans,
+    .service-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan-card,
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .progress-records table {
+        display: block;
+        overflow-x: auto;
+    }
+}
